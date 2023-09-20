@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>995544623431-qnknl296t6004ki8ma6adc78k6afthg7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.995544623431-qnknl296t6004ki8ma6adc78k6afthg7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDh3Zodi8k0N4uv76uBppxgYoOeKDcbynU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>995544623431</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.lucent.personix</string>
+	<key>PROJECT_ID</key>
+	<string>belocated-222eb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>belocated-222eb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:995544623431:ios:513ad707f49cf89016c462</string>
+</dict>
+</plist>
