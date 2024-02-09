@@ -11,6 +11,7 @@
 		5ECCF7A02AB1876C00C4D43C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECCF79C2AB1876C00C4D43C /* Message.swift */; };
 		5ECCF7A12AB1876C00C4D43C /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECCF79D2AB1876C00C4D43C /* Chat.swift */; };
 		5ECCF7A22AB1876C00C4D43C /* ChatUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECCF79E2AB1876C00C4D43C /* ChatUser.swift */; };
+		7A176DD06B852FB2F7117F0F /* Pods_BelocatedTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C9352AC9D20D795AD6C98D /* Pods_BelocatedTabBar.framework */; };
 		8D1C35232A9F5B3100306011 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1C35222A9F5B3100306011 /* SignUpViewController.swift */; };
 		8D1C35272AA04A4F00306011 /* PersonalDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1C35252AA04A4F00306011 /* PersonalDetailsTableViewCell.swift */; };
 		8D1C35282AA04A4F00306011 /* PersonalDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D1C35262AA04A4F00306011 /* PersonalDetailsTableViewCell.xib */; };
@@ -65,6 +66,10 @@
 		A77F63D52A7B5ED5000F598E /* PriortizeSupportCastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F63D42A7B5ED5000F598E /* PriortizeSupportCastViewController.swift */; };
 		A77F63D82A7B5F6E000F598E /* priortizeSupportCastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F63D62A7B5F6E000F598E /* priortizeSupportCastTableViewCell.swift */; };
 		A77F63D92A7B5F6E000F598E /* priortizeSupportCastTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A77F63D72A7B5F6E000F598E /* priortizeSupportCastTableViewCell.xib */; };
+		E90D91EC2B75E94800F53793 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E90D91EB2B75E94800F53793 /* Gilroy-Bold.ttf */; };
+		E90D91F02B75ECAD00F53793 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E90D91ED2B75ECAB00F53793 /* Gilroy-Regular.ttf */; };
+		E90D91F12B75ECAD00F53793 /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E90D91EE2B75ECAC00F53793 /* Gilroy-SemiBold.ttf */; };
+		E90D91F22B75ECAD00F53793 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E90D91EF2B75ECAD00F53793 /* Gilroy-Medium.ttf */; };
 		E93FEC832B73458D000D1ED2 /* SupportCastPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93FEC822B73458D000D1ED2 /* SupportCastPhotoViewController.swift */; };
 		E93FEC862B738146000D1ED2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93FEC842B738146000D1ED2 /* ImagePicker.swift */; };
 		E93FEC872B738146000D1ED2 /* CapturedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93FEC852B738146000D1ED2 /* CapturedImageViewController.swift */; };
@@ -142,6 +147,10 @@
 		A77F63D42A7B5ED5000F598E /* PriortizeSupportCastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriortizeSupportCastViewController.swift; sourceTree = "<group>"; };
 		A77F63D62A7B5F6E000F598E /* priortizeSupportCastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = priortizeSupportCastTableViewCell.swift; sourceTree = "<group>"; };
 		A77F63D72A7B5F6E000F598E /* priortizeSupportCastTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = priortizeSupportCastTableViewCell.xib; sourceTree = "<group>"; };
+		E90D91EB2B75E94800F53793 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
+		E90D91ED2B75ECAB00F53793 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		E90D91EE2B75ECAC00F53793 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
+		E90D91EF2B75ECAD00F53793 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
 		E93FEC822B73458D000D1ED2 /* SupportCastPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportCastPhotoViewController.swift; sourceTree = "<group>"; };
 		E93FEC842B738146000D1ED2 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E93FEC852B738146000D1ED2 /* CapturedImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapturedImageViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A176DD06B852FB2F7117F0F /* Pods_BelocatedTabBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +266,11 @@
 		8D26E74D2A57CB3300D4951F = {
 			isa = PBXGroup;
 			children = (
+				E90D91EF2B75ECAD00F53793 /* Gilroy-Medium.ttf */,
+				E90D91ED2B75ECAB00F53793 /* Gilroy-Regular.ttf */,
+				E90D91EE2B75ECAC00F53793 /* Gilroy-SemiBold.ttf */,
+				E90D91EB2B75E94800F53793 /* Gilroy-Bold.ttf */,
+				E9AC26012B74F5640035534E /* gilroy */,
 				8D26E7582A57CB3300D4951F /* BelocatedTabBar */,
 				8D26E7572A57CB3300D4951F /* Products */,
 				4E8AE3CD38B0271FE8D6F9C6 /* Pods */,
@@ -274,7 +289,6 @@
 		8D26E7582A57CB3300D4951F /* BelocatedTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				E9AC26012B74F5640035534E /* gilroy */,
 				8D32E7542AAF09CC00963F5F /* GoogleService-Info.plist */,
 				8D26E7592A57CB3300D4951F /* AppDelegate.swift */,
 				8D26E75B2A57CB3300D4951F /* SceneDelegate.swift */,
@@ -560,6 +574,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90D91F02B75ECAD00F53793 /* Gilroy-Regular.ttf in Resources */,
+				E90D91F12B75ECAD00F53793 /* Gilroy-SemiBold.ttf in Resources */,
+				E90D91F22B75ECAD00F53793 /* Gilroy-Medium.ttf in Resources */,
+				E90D91EC2B75E94800F53793 /* Gilroy-Bold.ttf in Resources */,
 				8D1C35282AA04A4F00306011 /* PersonalDetailsTableViewCell.xib in Resources */,
 				8D26E7662A57CB3400D4951F /* LaunchScreen.storyboard in Resources */,
 				8DBF656B2A5BF4B40082683E /* ActivitiesTableViewCell.xib in Resources */,
@@ -857,9 +875,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -869,7 +887,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/samuelsajeev/Documents/0.3/BeLocatedtabBar-main/BelocatedTabBar/SupportCastPhoto/CIrcleCropView.h";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/samuelsajeev/Desktop/BelocatedMain/BeLocated/BelocatedTabBar/SupportCastPhoto/CIrcleCropView.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -895,9 +913,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -907,7 +925,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/samuelsajeev/Documents/0.3/BeLocatedtabBar-main/BelocatedTabBar/SupportCastPhoto/CIrcleCropView.h";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/samuelsajeev/Desktop/BelocatedMain/BeLocated/BelocatedTabBar/SupportCastPhoto/CIrcleCropView.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

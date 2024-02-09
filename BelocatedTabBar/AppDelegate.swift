@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import GoogleMaps
+//import GoogleMaps
 import FacebookCore
 import FirebaseCore
 import GoogleSignIn
@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
-        GMSServices.provideAPIKey("AIzaSyDB2jNiow1mIxs6b6T0VF7oU-XNTdsPYVg")
+//        GMSServices.provideAPIKey("AIzaSyDB2jNiow1mIxs6b6T0VF7oU-XNTdsPYVg")
         
         return true
     }

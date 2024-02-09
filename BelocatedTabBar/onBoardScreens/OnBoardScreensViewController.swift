@@ -27,6 +27,7 @@ class OnBoardScreensViewController: UIViewController {
     @IBOutlet weak var backBtnRightSideConstraints: NSLayoutConstraint!
     @IBOutlet weak var lastPageBackBtn: UIButton!
     @IBOutlet weak var subParaWidthConstraints: NSLayoutConstraint! //42
+    @IBOutlet weak var subParagraphTopConstraint: NSLayoutConstraint!
     
     // variables
     var onBoardScreenImages = ["onBoardFirst","onBoardSec","onBoardThird","onBoardFive","onBoardSix","onBoardSEven"] // 6 onboard screens
@@ -42,29 +43,30 @@ class OnBoardScreensViewController: UIViewController {
         getStartBtn.isHidden = true
         lastPageBackBtn.isHidden = true
         getStartBtn.layer.cornerRadius = getStartBtn.frame.height / 2
-//        let gradientLayer = CAGradientLayer()
-//
-//                // Define the colors for the gradient
-//                let color1 = UIColor(red: 255/255, green: 205/255, blue: 0/255, alpha: 1).cgColor
-//                let color2 = UIColor(red: 255/255, green: 232/255, blue: 137/255, alpha: 1).cgColor
-//
-//                // Set the gradient colors
-//                gradientLayer.colors = [color1, color2]
-//
-//                // Set gradient direction from right to left
-//                gradientLayer.startPoint = CGPoint(x: 1.0, y: 0.5)
-//                gradientLayer.endPoint = CGPoint(x: 0.0, y: 0.5)
-//
-//                // Set the frame of the gradient layer to match the button's bounds
-//                gradientLayer.frame = getStartBtn.bounds
-//                gradientLayer.cornerRadius = getStartBtn.layer.cornerRadius
-//                // Set z-position to behind the button content
-//                //gradientLayer.zPosition = 100
-//
-//                // Insert the gradient layer as the background of the button
-//                getStartBtn.layer.insertSublayer(gradientLayer, at: 0)
+//        MainHeadingLabel.font = UIFont(name: "Gilroy-Bold", size: 30)
+//        subParagraphLabel.font = UIFont(name: "Gilroy-Regular", size: 17)
+        subParagraphLabel.addInterlineSpacing()
+        // swipeup gesture
+        let swipeRightGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(_:)))
+        swipeRightGesture.direction = .right
+        view.addGestureRecognizer(swipeRightGesture)
+
+        let swipeLeftGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(_:)))
+        swipeLeftGesture.direction = .left
+        view.addGestureRecognizer(swipeLeftGesture)
         
     }
+    @objc func handleSwipe(_ gesture: UISwipeGestureRecognizer) {
+            if gesture.direction == .right {
+                if imageLocate != 0{
+                    backBtnAction(self)
+                }
+            } else if gesture.direction == .left {
+                if imageLocate <= 4{
+                    nextBtnAction(self)
+                }
+            }
+        }
     
     @IBAction func nextBtnAction(_ sender: Any) {
         backBtnOutlet.isHidden = false
@@ -82,7 +84,7 @@ class OnBoardScreensViewController: UIViewController {
             self.view.layoutIfNeeded()
             
         }
-        mainHeadingBottomConstraints.constant = 198
+        mainHeadingBottomConstraints.constant = 233
         
     }
     
@@ -111,13 +113,13 @@ class OnBoardScreensViewController: UIViewController {
             self.view.layoutIfNeeded()
             
         }
-        mainHeadingBottomConstraints.constant = 198
+        mainHeadingBottomConstraints.constant = 233
         
     }
     
     @IBAction func getStartBtnAction(_ sender: Any) {
-//        let toSignInSignUpPage = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "onBoardingViewController") as! onBoardingViewController
-//        navigationController?.pushViewController(toSignInSignUpPage, animated: true)
+        //        let toSignInSignUpPage = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "onBoardingViewController") as! onBoardingViewController
+        //        navigationController?.pushViewController(toSignInSignUpPage, animated: true)
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                let LoginVc = storyBoard.instantiateViewController(withIdentifier: "onBoardingViewController") as! onBoardingViewController
                self.navigationController?.pushViewController(LoginVc, animated: true)
@@ -128,27 +130,32 @@ class OnBoardScreensViewController: UIViewController {
         switch imageLocate{
         case 0:
             MainHeadingLabel.text = "Rescuee"
-//            MainHeadingLabel.font = UIFont(name:"Gilroy-Bold",size:30)
+            MainHeadingLabel.font = UIFont(name: "Gilroy-Bold", size: 30)
             subParagraphLabel.text = "Awesome! Now Let's start adding your loved ones. Your loved ones are called"
             boldTextParagraph.text = "\"Rescuee\""
             boldTextParagraph.isHidden = false
             subParagHeightConstraint.constant = 46
             subParaWidthConstraints.constant = 42
             subParagraphLabel.textAlignment = .left
+            subParagraphLabel.addInterlineSpacing()
+//            subParagraphTopConstraint.constant = 12
         case 1:
             MainHeadingLabel.text = "Support Cast"
-//            subParagraphLabel.text = "Let’s choose your family and friends to help you protect and rescue your loved ones in an emergency. Your friends and family are called “Support Cast(s)”"
-            let mainHeading = "Support Cast"
+            let mainHeading = "“Support Cast(s)”"
             let subParagraph = "Let’s choose your family and friends to help you protect and rescue your loved ones in an emergency. Your friends and family are called “Support Cast(s)”"
-            let attributedString = NSMutableAttributedString(string: subParagraph)
-            let range = (subParagraph as NSString).range(of: "\"Support Cast(s)\"")
-            attributedString.addAttribute(.foregroundColor, value: UIColor(red: 70/255, green: 58/255, blue: 8/255, alpha: 1), range: range)
-            attributedString.addAttribute(.font, value: UIFont.boldSystemFont(ofSize: 16), range: range)
-            subParagraphLabel.attributedText = attributedString
-            subParagraphLabel.textAlignment = .justified
+            let attributedStrings = NSMutableAttributedString(string: subParagraph)
+            if let range = subParagraph.range(of: mainHeading) {
+                let nsRange = NSRange(range, in: subParagraph)
+                attributedStrings.addAttribute(.foregroundColor, value: UIColor(red: 70/255, green: 58/255, blue: 8/255, alpha: 1), range: nsRange)
+                attributedStrings.addAttribute(.font, value: UIFont(name: "Gilroy-Bold", size: 17)!, range: nsRange)
+            }
+            subParagraphLabel.attributedText = attributedStrings
+            subParagraphLabel.setLineSpacing()
+            subParagraphLabel.textAlignment = .left
             boldTextParagraph.isHidden = true
             subParagHeightConstraint.constant = 110
-            subParaWidthConstraints.constant = 42
+            subParaWidthConstraints.constant = 30
+//            subParagraphTopConstraint.constant = -5
         case 2:
             MainHeadingLabel.text = "Rescuer"
             subParagraphLabel.text = "Rescuer can easily share the location of the Rescuee with the Support Cast/Caregiver"
@@ -156,6 +163,8 @@ class OnBoardScreensViewController: UIViewController {
             boldTextParagraph.isHidden = true
             subParagHeightConstraint.constant = 90
             subParaWidthConstraints.constant = 42
+            subParagraphLabel.addInterlineSpacing()
+//            subParagraphTopConstraint.constant = -10
         case 3:
             MainHeadingLabel.text = "Caregiver"
             subParagraphLabel.text = "As a Caregiver you can add Rescuees and connect with one or more Support Casts."
@@ -163,6 +172,8 @@ class OnBoardScreensViewController: UIViewController {
             boldTextParagraph.isHidden = true
             subParagHeightConstraint.constant = 90
             subParaWidthConstraints.constant = 42
+            subParagraphLabel.addInterlineSpacing()
+//            subParagraphTopConstraint.constant = -19
         case 4:
             MainHeadingLabel.text = "Rescue Process"
             subParagraphLabel.text = "Rescuer can get the details that you provided of the Rescuee and inform the Support Cast/Caregiver. Once the Rescuee is located and returned, the rescue process would be completed"
@@ -176,6 +187,8 @@ class OnBoardScreensViewController: UIViewController {
             skipDashedLabel.isHidden = false
             skipBtnOutlet.isHidden = false
             subParaWidthConstraints.constant = 45
+            subParagraphLabel.addInterlineSpacing()
+//            subParagraphTopConstraint.constant = 7
         case 5:
             MainHeadingLabel.text = "BeLocated Store"
             subParagraphLabel.text = "Purchase useful products from the BeLocated store."
@@ -189,6 +202,8 @@ class OnBoardScreensViewController: UIViewController {
             skipDashedLabel.isHidden = true
             skipBtnOutlet.isHidden = true
             subParaWidthConstraints.constant = 42
+            subParagraphLabel.addInterlineSpacing()
+//            subParagraphTopConstraint.constant = 9
         default:
             print("problem in onboard btn action")
         }
@@ -208,4 +223,59 @@ class OnBoardScreensViewController: UIViewController {
         }
         
     }
+private extension UILabel {
 
+    // MARK: - spacingValue is spacing that you need
+    func addInterlineSpacing(spacingValue: CGFloat = 4) {
+
+        // MARK: - Check if there's any text
+        guard let textString = text else { return }
+
+        // MARK: - Create "NSMutableAttributedString" with your text
+        let attributedString = NSMutableAttributedString(string: textString)
+
+        // MARK: - Create instance of "NSMutableParagraphStyle"
+        let paragraphStyle = NSMutableParagraphStyle()
+
+        // MARK: - Actually adding spacing we need to ParagraphStyle
+        paragraphStyle.lineSpacing = spacingValue
+
+        // MARK: - Adding ParagraphStyle to your attributed String
+        attributedString.addAttribute(
+            .paragraphStyle,
+            value: paragraphStyle,
+            range: NSRange(location: 0, length: attributedString.length
+        ))
+
+        // MARK: - Assign string that you've modified to current attributed Text
+        attributedText = attributedString
+    }
+
+}
+extension UILabel {
+
+    func setLineSpacing(lineSpacing: CGFloat = 4, lineHeightMultiple: CGFloat = 0.0) {
+
+        guard let labelText = self.text else { return }
+
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = lineSpacing
+        paragraphStyle.lineHeightMultiple = lineHeightMultiple
+
+        let attributedString:NSMutableAttributedString
+        if let labelattributedText = self.attributedText {
+            attributedString = NSMutableAttributedString(attributedString: labelattributedText)
+        } else {
+            attributedString = NSMutableAttributedString(string: labelText)
+        }
+
+        // (Swift 4.2 and above) Line spacing attribute
+        attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
+
+
+        // (Swift 4.1 and 4.0) Line spacing attribute
+        attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
+
+        self.attributedText = attributedString
+    }
+}
