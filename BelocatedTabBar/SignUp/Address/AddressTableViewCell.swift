@@ -11,6 +11,7 @@ class AddressTableViewCell: UITableViewCell {
 
     @IBOutlet var getcurrentLoactionButton: UIButton!
     @IBOutlet var addAddressManualBtn: UIButton!
+    @IBOutlet weak var whyweAskBackgroundView: CustomView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,6 +20,7 @@ class AddressTableViewCell: UITableViewCell {
         addAddressManualBtn.makeRounded()
         addAddressManualBtn.layer.borderWidth = 1
         addAddressManualBtn.layer.borderColor = UIColor.init(hexString: "#A28200")?.cgColor
+        whyweAskBackgroundView.applyGradient()
     
     }
 

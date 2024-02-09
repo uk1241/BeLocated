@@ -28,6 +28,7 @@ class OnBoardScreensViewController: UIViewController {
     @IBOutlet weak var lastPageBackBtn: UIButton!
     @IBOutlet weak var subParaWidthConstraints: NSLayoutConstraint! //42
     @IBOutlet weak var subParagraphTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var paraBottamConstraint: NSLayoutConstraint!
     
     // variables
     var onBoardScreenImages = ["onBoardFirst","onBoardSec","onBoardThird","onBoardFive","onBoardSix","onBoardSEven"] // 6 onboard screens
@@ -153,7 +154,7 @@ class OnBoardScreensViewController: UIViewController {
             subParagraphLabel.setLineSpacing()
             subParagraphLabel.textAlignment = .left
             boldTextParagraph.isHidden = true
-            subParagHeightConstraint.constant = 110
+//            subParagHeightConstraint.constant = 110
             subParaWidthConstraints.constant = 30
 //            subParagraphTopConstraint.constant = -5
         case 2:

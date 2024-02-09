@@ -1244,7 +1244,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awesome! Now Let's start adding your loved ones. Your loved ones are called" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVc-cw-OxX">
-                                <rect key="frame" x="20" y="593" width="331" height="46"/>
+                                <rect key="frame" x="20" y="596" width="331" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="t9f-ag-IkI"/>
                                 </constraints>
@@ -1253,7 +1253,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Rescuee&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8m-DD-5dd">
-                                <rect key="frame" x="20" y="642" width="145" height="21"/>
+                                <rect key="frame" x="20" y="645" width="145" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="eLB-Sv-Gk1"/>
                                 </constraints>
@@ -1356,6 +1356,7 @@
                         <constraints>
                             <constraint firstItem="Bzy-RT-iKt" firstAttribute="leading" secondItem="4Sd-VK-Ceh" secondAttribute="leading" constant="167" id="03x-UD-LDu"/>
                             <constraint firstItem="o8m-DD-5dd" firstAttribute="leading" secondItem="4Sd-VK-Ceh" secondAttribute="leading" constant="20" id="1OO-jS-nAX"/>
+                            <constraint firstItem="eVc-cw-OxX" firstAttribute="top" secondItem="ElD-8O-o8E" secondAttribute="bottom" constant="12" id="2Ea-Fz-g2y"/>
                             <constraint firstItem="SX8-aa-ZcI" firstAttribute="top" secondItem="ElD-8O-o8E" secondAttribute="bottom" constant="153" id="6pk-f2-mMX"/>
                             <constraint firstItem="Bzy-RT-iKt" firstAttribute="top" secondItem="eBL-0H-ASd" secondAttribute="bottom" constant="268" id="6us-ol-3IT"/>
                             <constraint firstItem="JTj-Fh-OFi" firstAttribute="leading" secondItem="rvR-Um-EkR" secondAttribute="trailing" constant="10" id="9MQ-qm-Xyq"/>
@@ -1365,7 +1366,6 @@
                             <constraint firstItem="59V-fE-jJM" firstAttribute="leading" secondItem="4Sd-VK-Ceh" secondAttribute="leading" constant="20" id="HOJ-Ej-c8b"/>
                             <constraint firstItem="eBL-0H-ASd" firstAttribute="leading" secondItem="4Sd-VK-Ceh" secondAttribute="leading" id="IBk-01-dfH"/>
                             <constraint firstItem="4Sd-VK-Ceh" firstAttribute="trailing" secondItem="eVc-cw-OxX" secondAttribute="trailing" constant="42" id="IvP-XI-cPF"/>
-                            <constraint firstItem="eVc-cw-OxX" firstAttribute="top" secondItem="ElD-8O-o8E" secondAttribute="bottom" constant="9" id="MWB-ma-Oye"/>
                             <constraint firstItem="eBL-0H-ASd" firstAttribute="trailing" secondItem="4Sd-VK-Ceh" secondAttribute="trailing" id="O3w-Q5-pOS"/>
                             <constraint firstItem="4Sd-VK-Ceh" firstAttribute="trailing" secondItem="o8m-DD-5dd" secondAttribute="trailing" constant="228" id="X7u-05-RsG"/>
                             <constraint firstItem="YuC-KD-Cjb" firstAttribute="leading" secondItem="gZb-Qo-iKh" secondAttribute="trailing" constant="9" id="cg0-yT-yb9"/>
