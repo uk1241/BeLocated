@@ -213,7 +213,7 @@ extension UIViewController {
         imageView.contentMode = .center
         
         // Set the frame of the imageView to match the navigation bar's frame
-        imageView.frame = CGRect(x: 0, y: 0, width: navigationBar.frame.width, height: navigationBar.frame.height)
+        imageView.frame = CGRect(x: 0, y: 0, width: 223.88, height: 78.39)
         
         navigationItem.titleView = imageView
         

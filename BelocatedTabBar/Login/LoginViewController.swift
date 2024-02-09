@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        navigationController?.isNavigationBarHidden = true
-        setupCustomNavigationBar()
+//        setupCustomNavigationBar()
         loginButton.makeRounded()
     }
     @IBAction func LoginButtonTapped()
