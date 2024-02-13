@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Bold.ttf">
+            <string>Gilroy-Bold</string>
+        </array>
+        <array key="Gilroy-Regular.ttf">
+            <string>Gilroy-Regular</string>
+        </array>
+        <array key="Gilroy-SemiBold.ttf">
+            <string>Gilroy-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LinkSentViewController" customModule="BelocatedTabBar" customModuleProvider="target">
+            <connections>
+                <outlet property="backGroundView" destination="GsK-NS-lxm" id="IHC-8g-bqL"/>
+                <outlet property="dashLineResendLftConstraint" destination="Pu4-WB-tFw" id="UrG-0S-8xj"/>
+                <outlet property="doneBtn" destination="alW-bQ-U2j" id="H4q-Af-gbb"/>
+                <outlet property="emailBackgroundView" destination="UUC-qZ-XuT" id="Vjq-S0-X0U"/>
+                <outlet property="emailMobileTextLabelOutlet" destination="MNR-jO-rHo" id="GZU-0n-v5Y"/>
+                <outlet property="emailTxtLabel" destination="VrY-5P-ShT" id="yPn-Kw-Nfk"/>
+                <outlet property="resendBtn" destination="tEK-5x-qzt" id="A49-mX-D2I"/>
+                <outlet property="resendDashedLine" destination="FMt-5u-sAk" id="S1d-x0-Fcu"/>
+                <outlet property="resendLinkLeftConstraint" destination="S4m-Co-154" id="0iY-dN-H4e"/>
+                <outlet property="verificationBtnOutlet" destination="7R9-1m-N4C" id="Bl4-5A-MsA"/>
+                <outlet property="verificationLftConstrnt" destination="24I-dv-qeO" id="iWE-RM-uMm"/>
+                <outlet property="verificationRightconstraint" destination="CAI-ZU-3Pg" id="1Vl-Oy-8Tq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GsK-NS-lxm">
+                    <rect key="frame" x="0.0" y="551" width="393" height="301"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link has been sent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gN2-Ef-7VX">
+                            <rect key="frame" x="20" y="27" width="324" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="324" id="cm1-YB-P5k"/>
+                                <constraint firstAttribute="height" constant="28" id="kF3-Ki-Alo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="22"/>
+                            <color key="textColor" red="0.33725490196078434" green="0.73725490196078436" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have sent you an email with a link to reset your password" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNR-jO-rHo">
+                            <rect key="frame" x="20" y="71" width="280" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="280" id="ben-hA-BjI"/>
+                                <constraint firstAttribute="height" constant="38" id="wQ9-ee-7qH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tv8-jA-ALc">
+                            <rect key="frame" x="347" y="30" width="26" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="7dR-xJ-Cru"/>
+                                <constraint firstAttribute="width" constant="26" id="e9N-JQ-Brh"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="greenBtn"/>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUC-qZ-XuT">
+                            <rect key="frame" x="20" y="129" width="353" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jamesdaniel@company.us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrY-5P-ShT">
+                                    <rect key="frame" x="20" y="19" width="271" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="271" id="WNB-8W-muj"/>
+                                        <constraint firstAttribute="height" constant="21" id="xdF-2b-gbe"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="17"/>
+                                    <color key="textColor" red="0.38823529411764707" green="0.396078431372549" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="82k-Ps-UgT"/>
+                                <constraint firstItem="VrY-5P-ShT" firstAttribute="leading" secondItem="UUC-qZ-XuT" secondAttribute="leading" constant="20" id="PsE-Wm-AGx"/>
+                                <constraint firstItem="VrY-5P-ShT" firstAttribute="top" secondItem="UUC-qZ-XuT" secondAttribute="top" constant="19" id="thP-Pl-fn8"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="837-B1-gL6">
+                            <rect key="frame" x="323" y="145" width="30" height="28"/>
+                            <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Edit">
+                                <color key="titleColor" red="0.27450980392156865" green="0.22745098039215686" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="editbtnAction:" destination="-1" eventType="touchUpInside" id="aYe-bF-izH"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jb0-ym-Pxb">
+                            <rect key="frame" x="324" y="158" width="29" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="OjK-ZN-wzI"/>
+                                <constraint firstAttribute="width" constant="29" id="jxI-9Y-m74"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.27450980390000002" green="0.2274509804" blue="0.031372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7R9-1m-N4C">
+                            <rect key="frame" x="55" y="215" width="283" height="38"/>
+                            <color key="backgroundColor" red="0.33725490196078434" green="0.73725490196078436" blue="0.33725490196078434" alpha="0.09954294217687075" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="k8E-af-BL0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Verification link has been sent">
+                                <color key="titleColor" red="0.33725490196078434" green="0.73725490196078436" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="verificationActionBtn:" destination="-1" eventType="touchUpInside" id="RVX-sR-05p"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEK-5x-qzt">
+                            <rect key="frame" x="32" y="225" width="88" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="4Yp-SD-Wcn"/>
+                                <constraint firstAttribute="width" constant="88" id="klm-ne-79R"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Resend Link">
+                                <color key="titleColor" red="0.27450980392156865" green="0.22745098039215686" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="resendBtn:" destination="-1" eventType="touchUpInside" id="ebF-My-pxv"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---------------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMt-5u-sAk">
+                            <rect key="frame" x="32" y="236" width="91" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="91" id="g5c-Zv-Gio"/>
+                                <constraint firstAttribute="height" constant="16" id="ohE-Im-hds"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.63529411764705879" green="0.50980392156862742" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alW-bQ-U2j">
+                            <rect key="frame" x="266" y="209" width="107" height="50"/>
+                            <color key="backgroundColor" red="0.070588235294117646" green="0.074509803921568626" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="VGo-RI-5B9"/>
+                                <constraint firstAttribute="width" constant="107" id="Vxl-0Y-L3b"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="doneBtnAction:" destination="-1" eventType="touchUpInside" id="S4b-BQ-Cer"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="7R9-1m-N4C" firstAttribute="leading" secondItem="GsK-NS-lxm" secondAttribute="leading" constant="55" id="24I-dv-qeO"/>
+                        <constraint firstItem="MNR-jO-rHo" firstAttribute="top" secondItem="gN2-Ef-7VX" secondAttribute="bottom" constant="16" id="8V0-gS-L6Z"/>
+                        <constraint firstAttribute="height" constant="301" id="9fm-js-f8u"/>
+                        <constraint firstItem="alW-bQ-U2j" firstAttribute="top" secondItem="UUC-qZ-XuT" secondAttribute="bottom" constant="20" id="BJV-GK-EDC"/>
+                        <constraint firstAttribute="trailing" secondItem="7R9-1m-N4C" secondAttribute="trailing" constant="55" id="CAI-ZU-3Pg"/>
+                        <constraint firstAttribute="trailing" secondItem="UUC-qZ-XuT" secondAttribute="trailing" constant="20" id="Cmd-9b-9x5"/>
+                        <constraint firstItem="tv8-jA-ALc" firstAttribute="top" secondItem="GsK-NS-lxm" secondAttribute="top" constant="30" id="DCb-QF-mzy"/>
+                        <constraint firstAttribute="width" constant="393" id="DJA-O7-AOy"/>
+                        <constraint firstItem="gN2-Ef-7VX" firstAttribute="top" secondItem="GsK-NS-lxm" secondAttribute="top" constant="27" id="Edv-1V-l8Y"/>
+                        <constraint firstItem="7R9-1m-N4C" firstAttribute="top" secondItem="UUC-qZ-XuT" secondAttribute="bottom" constant="26" id="GLg-30-9Bg"/>
+                        <constraint firstAttribute="trailing" secondItem="837-B1-gL6" secondAttribute="trailing" constant="40" id="N4u-AU-LqO"/>
+                        <constraint firstItem="MNR-jO-rHo" firstAttribute="leading" secondItem="GsK-NS-lxm" secondAttribute="leading" constant="20" id="PLw-wq-yLS"/>
+                        <constraint firstItem="FMt-5u-sAk" firstAttribute="leading" secondItem="GsK-NS-lxm" secondAttribute="leading" constant="32" id="Pu4-WB-tFw"/>
+                        <constraint firstItem="tEK-5x-qzt" firstAttribute="leading" secondItem="GsK-NS-lxm" secondAttribute="leading" constant="32" id="S4m-Co-154"/>
+                        <constraint firstAttribute="trailing" secondItem="Jb0-ym-Pxb" secondAttribute="trailing" constant="40" id="UfM-f7-zWe"/>
+                        <constraint firstAttribute="trailing" secondItem="tv8-jA-ALc" secondAttribute="trailing" constant="20" id="a90-Lu-KQH"/>
+                        <constraint firstAttribute="trailing" secondItem="alW-bQ-U2j" secondAttribute="trailing" constant="20" id="fNI-Yl-18K"/>
+                        <constraint firstItem="FMt-5u-sAk" firstAttribute="top" secondItem="UUC-qZ-XuT" secondAttribute="bottom" constant="47" id="hIV-Lf-6hw"/>
+                        <constraint firstItem="tEK-5x-qzt" firstAttribute="top" secondItem="UUC-qZ-XuT" secondAttribute="bottom" constant="36" id="iB5-rl-DHT"/>
+                        <constraint firstItem="Jb0-ym-Pxb" firstAttribute="top" secondItem="gN2-Ef-7VX" secondAttribute="bottom" constant="103" id="nJ5-jK-VBR"/>
+                        <constraint firstItem="837-B1-gL6" firstAttribute="top" secondItem="gN2-Ef-7VX" secondAttribute="bottom" constant="90" id="qeT-qC-nFj"/>
+                        <constraint firstItem="UUC-qZ-XuT" firstAttribute="leading" secondItem="GsK-NS-lxm" secondAttribute="leading" constant="20" id="uVp-CN-PhK"/>
+                        <constraint firstItem="UUC-qZ-XuT" firstAttribute="top" secondItem="MNR-jO-rHo" secondAttribute="bottom" constant="20" id="veY-6N-4EB"/>
+                        <constraint firstItem="gN2-Ef-7VX" firstAttribute="leading" secondItem="GsK-NS-lxm" secondAttribute="leading" constant="20" id="y7I-eL-i6S"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="GsK-NS-lxm" secondAttribute="bottom" constant="-34" id="ABD-SO-voB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GsK-NS-lxm" secondAttribute="trailing" id="keA-cI-lPH"/>
+                <constraint firstItem="GsK-NS-lxm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wGI-NY-zoa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="170" y="-1"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="greenBtn" width="27" height="27"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

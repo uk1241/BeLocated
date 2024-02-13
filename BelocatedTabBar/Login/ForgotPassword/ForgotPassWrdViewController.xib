@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Bold.ttf">
+            <string>Gilroy-Bold</string>
+        </array>
+        <array key="Gilroy-Regular.ttf">
+            <string>Gilroy-Regular</string>
+        </array>
+        <array key="Gilroy-SemiBold.ttf">
+            <string>Gilroy-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForgotPassWrdViewController" customModule="BelocatedTabBar" customModuleProvider="target">
+            <connections>
+                <outlet property="activationRight" destination="zUN-h2-YBp" id="f6S-IP-wEN"/>
+                <outlet property="activationleft" destination="0wV-W3-0Ws" id="hHo-52-Pmj"/>
+                <outlet property="backgroundView" destination="qGR-pg-rpb" id="89i-bO-Cgh"/>
+                <outlet property="cancelBtnOutlet" destination="dHJ-YI-kYT" id="lWQ-Hp-Qpd"/>
+                <outlet property="dashLineLeft" destination="lVj-dg-bTK" id="nIH-A9-c2M"/>
+                <outlet property="doneBtn" destination="UCX-M1-3C7" id="2v5-dg-gnl"/>
+                <outlet property="emailBackgroundView" destination="IC7-4o-pez" id="N4f-jN-Qqf"/>
+                <outlet property="emailMobileTextLabel" destination="PzY-MO-e6L" id="uIa-35-TPc"/>
+                <outlet property="emailTextfld" destination="eXA-Jd-H50" id="JU2-UZ-U5R"/>
+                <outlet property="enterYourRegSubText" destination="4B7-Cl-dce" id="BMk-MG-yHm"/>
+                <outlet property="forGotPassHeading" destination="h23-ib-OBd" id="HBs-9T-fbT"/>
+                <outlet property="passingMailLabel" destination="sa6-nP-MoL" id="zbj-Zr-1o8"/>
+                <outlet property="resendBtnAction" destination="9MS-V2-jda" id="p3k-ms-Ofr"/>
+                <outlet property="resendDashLine" destination="M0J-kP-J79" id="IWW-9U-VHP"/>
+                <outlet property="resendLeft" destination="oLQ-Zt-4E7" id="kl3-lp-E0m"/>
+                <outlet property="secViewBackGround" destination="Ax0-5h-Kt7" id="V9o-dJ-6hd"/>
+                <outlet property="secViewHeight" destination="S6x-TJ-ba1" id="J2y-Im-CIj"/>
+                <outlet property="sendResetLinkBtnOutlet" destination="UfC-Ha-QsJ" id="GBP-Ky-x3d"/>
+                <outlet property="verificationBtn" destination="6hh-IQ-hdY" id="4LS-92-ds8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGR-pg-rpb">
+                    <rect key="frame" x="0.0" y="218" width="393" height="634"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ax0-5h-Kt7">
+                            <rect key="frame" x="0.0" y="333" width="393" height="301"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link has been sent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FX9-mr-Qcm">
+                                    <rect key="frame" x="20" y="27" width="324" height="28"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="28" id="8hk-C4-6ia"/>
+                                        <constraint firstAttribute="width" constant="324" id="OvK-eN-1E9"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="22"/>
+                                    <color key="textColor" red="0.33725490200000002" green="0.73725490199999999" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have sent you an email with a link to reset your password" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PzY-MO-e6L">
+                                    <rect key="frame" x="20" y="71" width="280" height="38"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="280" id="34d-BN-S0Y"/>
+                                        <constraint firstAttribute="height" constant="38" id="WjC-G6-kQl"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tw1-51-M0U">
+                                    <rect key="frame" x="347" y="30" width="26" height="26"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="26" id="G4f-Ze-iLE"/>
+                                        <constraint firstAttribute="height" constant="26" id="dpE-Tr-sUk"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="greenBtn"/>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IC7-4o-pez">
+                                    <rect key="frame" x="20" y="129" width="353" height="60"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jamesdaniel@company.us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sa6-nP-MoL">
+                                            <rect key="frame" x="20" y="19" width="271" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="271" id="Pbm-3s-rNY"/>
+                                                <constraint firstAttribute="height" constant="21" id="iEH-02-Kuu"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="17"/>
+                                            <color key="textColor" red="0.38823529410000002" green="0.39607843139999999" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="sa6-nP-MoL" firstAttribute="leading" secondItem="IC7-4o-pez" secondAttribute="leading" constant="20" id="P9U-EB-ihX"/>
+                                        <constraint firstAttribute="height" constant="60" id="bc9-b8-evv"/>
+                                        <constraint firstItem="sa6-nP-MoL" firstAttribute="top" secondItem="IC7-4o-pez" secondAttribute="top" constant="19" id="mk0-t8-Ff1"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42Q-B5-miK">
+                                    <rect key="frame" x="323" y="145" width="30" height="28"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Edit">
+                                        <color key="titleColor" red="0.27450980390000002" green="0.2274509804" blue="0.031372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="editBtnAction:" destination="-1" eventType="touchUpInside" id="0Yd-u0-oay"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rj3-yi-Vov">
+                                    <rect key="frame" x="324" y="158" width="29" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="ha5-72-EWS"/>
+                                        <constraint firstAttribute="width" constant="29" id="qup-sW-iA6"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" red="0.27450980390000002" green="0.2274509804" blue="0.031372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hh-IQ-hdY">
+                                    <rect key="frame" x="55" y="215" width="283" height="38"/>
+                                    <color key="backgroundColor" red="0.33725490200000002" green="0.73725490199999999" blue="0.33725490200000002" alpha="0.099542942179999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="38" id="u2d-3c-dkl"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Verification link has been sent">
+                                        <color key="titleColor" red="0.33725490200000002" green="0.73725490199999999" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="verificationAction:" destination="-1" eventType="touchUpInside" id="TFg-F2-Dzu"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MS-V2-jda">
+                                    <rect key="frame" x="32" y="225" width="88" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="88" id="DGS-D8-VDh"/>
+                                        <constraint firstAttribute="height" constant="20" id="Hhl-ey-ULf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Resend Link">
+                                        <color key="titleColor" red="0.27450980390000002" green="0.2274509804" blue="0.031372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="resendAction:" destination="-1" eventType="touchUpInside" id="A7L-0E-JWd"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---------------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0J-kP-J79">
+                                    <rect key="frame" x="32" y="236" width="91" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="91" id="flS-jS-voY"/>
+                                        <constraint firstAttribute="height" constant="16" id="xEs-wd-0DY"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.63529411759999999" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCX-M1-3C7">
+                                    <rect key="frame" x="266" y="209" width="107" height="50"/>
+                                    <color key="backgroundColor" red="0.070588235289999995" green="0.074509803920000006" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="107" id="Flg-Z1-kj9"/>
+                                        <constraint firstAttribute="height" constant="50" id="VXi-Q8-OcC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Done">
+                                        <color key="titleColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doneBtnAction:" destination="-1" eventType="touchUpInside" id="QAf-UR-4p1"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="6hh-IQ-hdY" firstAttribute="leading" secondItem="Ax0-5h-Kt7" secondAttribute="leading" constant="55" id="0wV-W3-0Ws"/>
+                                <constraint firstItem="FX9-mr-Qcm" firstAttribute="top" secondItem="Ax0-5h-Kt7" secondAttribute="top" constant="27" id="3hX-ua-m5B"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="301" id="7g9-Z4-Sge"/>
+                                <constraint firstAttribute="trailing" secondItem="Rj3-yi-Vov" secondAttribute="trailing" constant="40" id="FwG-PJ-VDD"/>
+                                <constraint firstItem="IC7-4o-pez" firstAttribute="top" secondItem="PzY-MO-e6L" secondAttribute="bottom" constant="20" id="Gyy-xh-7j8"/>
+                                <constraint firstItem="UCX-M1-3C7" firstAttribute="top" secondItem="IC7-4o-pez" secondAttribute="bottom" constant="20" id="HXF-uY-pyZ"/>
+                                <constraint firstItem="42Q-B5-miK" firstAttribute="top" secondItem="FX9-mr-Qcm" secondAttribute="bottom" constant="90" id="It9-Qu-xK1"/>
+                                <constraint firstAttribute="width" constant="393" id="J7e-Uj-Jm3"/>
+                                <constraint firstItem="PzY-MO-e6L" firstAttribute="leading" secondItem="Ax0-5h-Kt7" secondAttribute="leading" constant="20" id="QHY-Yf-aSL"/>
+                                <constraint firstItem="FX9-mr-Qcm" firstAttribute="leading" secondItem="Ax0-5h-Kt7" secondAttribute="leading" constant="20" id="Qwg-AM-F3Y"/>
+                                <constraint firstItem="M0J-kP-J79" firstAttribute="top" secondItem="IC7-4o-pez" secondAttribute="bottom" constant="47" id="R3h-zZ-ln7"/>
+                                <constraint firstAttribute="height" constant="301" id="S6x-TJ-ba1"/>
+                                <constraint firstAttribute="trailing" secondItem="IC7-4o-pez" secondAttribute="trailing" constant="20" id="SSW-7G-Smn"/>
+                                <constraint firstAttribute="trailing" secondItem="Tw1-51-M0U" secondAttribute="trailing" constant="20" id="atA-8y-emd"/>
+                                <constraint firstItem="Tw1-51-M0U" firstAttribute="top" secondItem="Ax0-5h-Kt7" secondAttribute="top" constant="30" id="cRl-yo-pYd"/>
+                                <constraint firstItem="9MS-V2-jda" firstAttribute="top" secondItem="IC7-4o-pez" secondAttribute="bottom" constant="36" id="dAm-zD-1zV"/>
+                                <constraint firstItem="PzY-MO-e6L" firstAttribute="top" secondItem="FX9-mr-Qcm" secondAttribute="bottom" constant="16" id="f1T-iy-GUr"/>
+                                <constraint firstAttribute="trailing" secondItem="42Q-B5-miK" secondAttribute="trailing" constant="40" id="gWI-6Y-Bsu"/>
+                                <constraint firstAttribute="trailing" secondItem="UCX-M1-3C7" secondAttribute="trailing" constant="20" id="i45-XQ-Kzh"/>
+                                <constraint firstItem="M0J-kP-J79" firstAttribute="leading" secondItem="Ax0-5h-Kt7" secondAttribute="leading" constant="32" id="lVj-dg-bTK"/>
+                                <constraint firstItem="9MS-V2-jda" firstAttribute="leading" secondItem="Ax0-5h-Kt7" secondAttribute="leading" constant="32" id="oLQ-Zt-4E7"/>
+                                <constraint firstItem="IC7-4o-pez" firstAttribute="leading" secondItem="Ax0-5h-Kt7" secondAttribute="leading" constant="20" id="oNJ-7U-j1H"/>
+                                <constraint firstItem="6hh-IQ-hdY" firstAttribute="top" secondItem="IC7-4o-pez" secondAttribute="bottom" constant="26" id="pU2-kj-NY9"/>
+                                <constraint firstItem="Rj3-yi-Vov" firstAttribute="top" secondItem="FX9-mr-Qcm" secondAttribute="bottom" constant="103" id="uhx-dJ-cH7"/>
+                                <constraint firstAttribute="trailing" secondItem="6hh-IQ-hdY" secondAttribute="trailing" constant="55" id="zUN-h2-YBp"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h23-ib-OBd">
+                            <rect key="frame" x="20" y="24" width="279" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="95G-nC-0cE"/>
+                                <constraint firstAttribute="width" constant="279" id="xh8-t9-lhd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="26"/>
+                            <color key="textColor" red="0.27450980392156865" green="0.22745098039215686" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHJ-YI-kYT">
+                            <rect key="frame" x="337" y="25" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="2Au-Sj-ySM"/>
+                                <constraint firstAttribute="width" constant="36" id="OuV-Gr-wCp"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="xButton"/>
+                            <connections>
+                                <action selector="cancelBtnOutlet:" destination="-1" eventType="touchUpInside" id="CBh-Qh-NYM"/>
+                                <action selector="cancelButtonAction:" destination="-1" eventType="touchUpInside" id="ivM-Fv-8eu"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your registered email address or phone number you use for your BeLocated account" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4B7-Cl-dce">
+                            <rect key="frame" x="20" y="76" width="353" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="0A3-Cu-ci8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="16"/>
+                            <color key="textColor" red="0.27450980392156865" green="0.22745098039215686" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="eXA-Jd-H50" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                            <rect key="frame" x="20" y="144" width="353" height="56"/>
+                            <color key="tintColor" red="0.27450980390000002" green="0.2274509804" blue="0.031372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="sB9-jX-Naf"/>
+                            </constraints>
+                            <color key="textColor" red="0.070588235294117646" green="0.074509803921568626" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="email"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                    <color key="value" red="0.070588235294117646" green="0.074509803921568626" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                    <color key="value" red="0.27450980392156865" green="0.22745098039215686" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                    <color key="value" red="0.27450980392156865" green="0.22745098039215686" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                    <color key="value" red="0.27450981736183167" green="0.22745099663734436" blue="0.031372550874948502" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Email Address/phone number"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfC-Ha-QsJ">
+                            <rect key="frame" x="20" y="220" width="353" height="50"/>
+                            <color key="backgroundColor" red="0.070588235294117646" green="0.074509803921568626" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="7HI-Vr-dSn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Send Reset Link">
+                                <color key="titleColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sndResetLinkBtnAction:" destination="-1" eventType="touchUpInside" id="ivi-of-aLa"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="h23-ib-OBd" firstAttribute="top" secondItem="qGR-pg-rpb" secondAttribute="top" constant="24" id="Bpc-o8-zc2"/>
+                        <constraint firstAttribute="trailing" secondItem="dHJ-YI-kYT" secondAttribute="trailing" constant="20" id="JhG-Pk-Cw5"/>
+                        <constraint firstItem="UfC-Ha-QsJ" firstAttribute="top" secondItem="eXA-Jd-H50" secondAttribute="bottom" constant="20" id="LW2-cl-pZs"/>
+                        <constraint firstItem="eXA-Jd-H50" firstAttribute="top" secondItem="4B7-Cl-dce" secondAttribute="bottom" constant="30" id="NB8-q4-DOq"/>
+                        <constraint firstItem="4B7-Cl-dce" firstAttribute="top" secondItem="h23-ib-OBd" secondAttribute="bottom" constant="19" id="Nnu-ce-2Hg"/>
+                        <constraint firstItem="UfC-Ha-QsJ" firstAttribute="leading" secondItem="qGR-pg-rpb" secondAttribute="leading" constant="20" id="PPy-vq-rwU"/>
+                        <constraint firstItem="dHJ-YI-kYT" firstAttribute="top" secondItem="qGR-pg-rpb" secondAttribute="top" constant="25" id="SBN-Qd-9S8"/>
+                        <constraint firstAttribute="trailing" secondItem="UfC-Ha-QsJ" secondAttribute="trailing" constant="20" id="TBt-dD-VP2"/>
+                        <constraint firstItem="Ax0-5h-Kt7" firstAttribute="leading" secondItem="qGR-pg-rpb" secondAttribute="leading" id="YdR-5K-RPs"/>
+                        <constraint firstItem="4B7-Cl-dce" firstAttribute="leading" secondItem="qGR-pg-rpb" secondAttribute="leading" constant="20" id="gCv-s8-0Tp"/>
+                        <constraint firstAttribute="trailing" secondItem="eXA-Jd-H50" secondAttribute="trailing" constant="20" id="jh9-tJ-HBp"/>
+                        <constraint firstAttribute="bottom" secondItem="Ax0-5h-Kt7" secondAttribute="bottom" id="oBu-st-ZoN"/>
+                        <constraint firstItem="h23-ib-OBd" firstAttribute="leading" secondItem="qGR-pg-rpb" secondAttribute="leading" constant="20" id="sXj-PQ-GOZ"/>
+                        <constraint firstAttribute="trailing" secondItem="Ax0-5h-Kt7" secondAttribute="trailing" id="soa-l5-bi3"/>
+                        <constraint firstAttribute="trailing" secondItem="4B7-Cl-dce" secondAttribute="trailing" constant="20" id="tWj-r0-6sg"/>
+                        <constraint firstItem="eXA-Jd-H50" firstAttribute="leading" secondItem="qGR-pg-rpb" secondAttribute="leading" constant="20" id="y2g-q7-8QH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.3273541331" green="0.3510745764" blue="0.4080201685" alpha="0.91993516156462585" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qGR-pg-rpb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="F0f-K5-84o"/>
+                <constraint firstItem="qGR-pg-rpb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="159" id="I8g-2t-4YY"/>
+                <constraint firstItem="qGR-pg-rpb" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="KcP-8Y-b4m"/>
+                <constraint firstAttribute="bottom" secondItem="qGR-pg-rpb" secondAttribute="bottom" id="b83-p4-NGE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="greenBtn" width="27" height="27"/>
+        <image name="xButton" width="36" height="36"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

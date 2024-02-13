@@ -8,7 +8,6 @@
 import UIKit
 import TextFieldFloatingPlaceholder
 import SkyFloatingLabelTextField
-
 class LoginViewController: UIViewController {
 
     @IBOutlet var emailTextField: SkyFloatingLabelTextField!
@@ -16,6 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordHideButton : UIButton!
     @IBOutlet var loginButton : UIButton!
     @IBOutlet var sigUpButton: UIButton!
+    
     var toggleState = false
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +51,33 @@ class LoginViewController: UIViewController {
         }
     }
  
+    @IBAction func forgotPasswordAction(_ sender: Any) {
+        let menu = ForgotPassWrdViewController()
+        menu.modalPresentationStyle = .overCurrentContext
+        menu.modalTransitionStyle = .coverVertical
+       // forgotPasswordVC.modalPresentationStyle = .overFullScreen
+        present(menu, animated: false, completion: nil)
+        UIView.animate(withDuration: 0.3) {
+                    self.view.layoutIfNeeded()
+                }
+
+    }
+    
+    
+    func dismissPopUpView(){
+        let menuS = LinkSentViewController()
+        menuS.modalPresentationStyle = .overCurrentContext
+        menuS.modalTransitionStyle = .coverVertical
+        present(menuS, animated: false, completion: nil)
+        UIView.animate(withDuration: 0.3) {
+                    self.view.layoutIfNeeded()
+                }
+    }
+
+    
+    
+    
+    
 }
 extension LoginViewController : UITextFieldDelegate
 {
@@ -59,5 +86,9 @@ extension LoginViewController : UITextFieldDelegate
         return true
     }
     
+    
+    
+}
+extension UIView{
     
 }

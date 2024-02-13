@@ -79,6 +79,10 @@
 		E93FEC992B738868000D1ED2 /* profileBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = E93FEC972B738868000D1ED2 /* profileBorder.png */; };
 		E93FEC9A2B738868000D1ED2 /* profileBorder.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E93FEC982B738868000D1ED2 /* profileBorder.pdf */; };
 		E93FEC9C2B738888000D1ED2 /* profile_boarder.png in Resources */ = {isa = PBXBuildFile; fileRef = E93FEC9B2B738888000D1ED2 /* profile_boarder.png */; };
+		E97EF8DF2B79D982005DF951 /* ForgotPassWrdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97EF8DD2B79D982005DF951 /* ForgotPassWrdViewController.swift */; };
+		E97EF8E02B79D982005DF951 /* ForgotPassWrdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97EF8DE2B79D982005DF951 /* ForgotPassWrdViewController.xib */; };
+		E97EF8E32B79F524005DF951 /* LinkSentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97EF8E12B79F524005DF951 /* LinkSentViewController.swift */; };
+		E97EF8E42B79F524005DF951 /* LinkSentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97EF8E22B79F524005DF951 /* LinkSentViewController.xib */; };
 		E9AC26002B748FEA0035534E /* OnBoardScreensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC25FF2B748FEA0035534E /* OnBoardScreensViewController.swift */; };
 		E9AC26022B74F5640035534E /* gilroy in Resources */ = {isa = PBXBuildFile; fileRef = E9AC26012B74F5640035534E /* gilroy */; };
 /* End PBXBuildFile section */
@@ -161,6 +165,10 @@
 		E93FEC972B738868000D1ED2 /* profileBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileBorder.png; sourceTree = "<group>"; };
 		E93FEC982B738868000D1ED2 /* profileBorder.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = profileBorder.pdf; sourceTree = "<group>"; };
 		E93FEC9B2B738888000D1ED2 /* profile_boarder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_boarder.png; sourceTree = "<group>"; };
+		E97EF8DD2B79D982005DF951 /* ForgotPassWrdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassWrdViewController.swift; sourceTree = "<group>"; };
+		E97EF8DE2B79D982005DF951 /* ForgotPassWrdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPassWrdViewController.xib; sourceTree = "<group>"; };
+		E97EF8E12B79F524005DF951 /* LinkSentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkSentViewController.swift; sourceTree = "<group>"; };
+		E97EF8E22B79F524005DF951 /* LinkSentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinkSentViewController.xib; sourceTree = "<group>"; };
 		E9AC25FF2B748FEA0035534E /* OnBoardScreensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardScreensViewController.swift; sourceTree = "<group>"; };
 		E9AC26012B74F5640035534E /* gilroy */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gilroy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -318,6 +326,7 @@
 		8D5BE9382A9EFC4B00DDD973 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				E97EF8DA2B79D698005DF951 /* ForgotPassword */,
 				8D5BE9392A9EFC7200DDD973 /* LoginViewController.swift */,
 			);
 			path = Login;
@@ -502,6 +511,17 @@
 			path = SupportCastPhoto;
 			sourceTree = "<group>";
 		};
+		E97EF8DA2B79D698005DF951 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				E97EF8DD2B79D982005DF951 /* ForgotPassWrdViewController.swift */,
+				E97EF8DE2B79D982005DF951 /* ForgotPassWrdViewController.xib */,
+				E97EF8E12B79F524005DF951 /* LinkSentViewController.swift */,
+				E97EF8E22B79F524005DF951 /* LinkSentViewController.xib */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
 		E9AC25FE2B748F880035534E /* onBoardScreens */ = {
 			isa = PBXGroup;
 			children = (
@@ -584,11 +604,13 @@
 				8DE1B45D2AAB0ACA00E9E711 /* rescueCompleteTableViewCell.xib in Resources */,
 				8D26E7632A57CB3400D4951F /* Assets.xcassets in Resources */,
 				A72F52782A5955610053EB75 /* AlertTableViewCell.xib in Resources */,
+				E97EF8E42B79F524005DF951 /* LinkSentViewController.xib in Resources */,
 				E93FEC992B738868000D1ED2 /* profileBorder.png in Resources */,
 				8D1C35372AA099AF00306011 /* PasswordTableViewCell.xib in Resources */,
 				A77F63D92A7B5F6E000F598E /* priortizeSupportCastTableViewCell.xib in Resources */,
 				8D26E7612A57CB3300D4951F /* Main.storyboard in Resources */,
 				A72F52862A596DC10053EB75 /* SupportCastTableViewCell.xib in Resources */,
+				E97EF8E02B79D982005DF951 /* ForgotPassWrdViewController.xib in Resources */,
 				8D1C352D2AA061B000306011 /* contactDetailsTableViewCell.xib in Resources */,
 				E9AC26022B74F5640035534E /* gilroy in Resources */,
 				8D32E7552AAF09CC00963F5F /* GoogleService-Info.plist in Resources */,
@@ -677,6 +699,7 @@
 				E93FEC832B73458D000D1ED2 /* SupportCastPhotoViewController.swift in Sources */,
 				8D43003E2A611BF300241AAF /* RescueeDetailsCollectionViewCell.swift in Sources */,
 				5ECCF7A02AB1876C00C4D43C /* Message.swift in Sources */,
+				E97EF8DF2B79D982005DF951 /* ForgotPassWrdViewController.swift in Sources */,
 				8DE1B4532AAAEC6500E9E711 /* currentResucerTableViewCell.swift in Sources */,
 				8D26E75E2A57CB3300D4951F /* ViewController.swift in Sources */,
 				8DF1D2E12AD015AF0042755D /* AddNewRescueeTableViewCell.swift in Sources */,
@@ -691,6 +714,7 @@
 				E93FEC962B738834000D1ED2 /* CircleCropView.swift in Sources */,
 				8D43001E2A5D0F2F00241AAF /* AlertDetailsViewController.swift in Sources */,
 				5ECCF79F2AB1876C00C4D43C /* ChatViewController.swift in Sources */,
+				E97EF8E32B79F524005DF951 /* LinkSentViewController.swift in Sources */,
 				E93FEC912B7387F5000D1ED2 /* SupportCastMainViewController.swift in Sources */,
 				8D26E75A2A57CB3300D4951F /* AppDelegate.swift in Sources */,
 				8D1C35312AA08E8E00306011 /* MailDetailsTableViewCell.swift in Sources */,
@@ -886,10 +910,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucent.personix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = /Users/samuelsajeev/Desktop/BelocatedMain/BeLocated/BelocatedTabBar/SupportCastPhoto/CIrcleCropView.h;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -924,10 +952,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucent.personix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = /Users/samuelsajeev/Desktop/BelocatedMain/BeLocated/BelocatedTabBar/SupportCastPhoto/CIrcleCropView.h;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

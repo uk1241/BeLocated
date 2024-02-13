@@ -154,33 +154,33 @@ class OnBoardScreensViewController: UIViewController {
             subParagraphLabel.setLineSpacing()
             subParagraphLabel.textAlignment = .left
             boldTextParagraph.isHidden = true
-//            subParagHeightConstraint.constant = 110
+            subParagHeightConstraint.constant = 90
             subParaWidthConstraints.constant = 30
-//            subParagraphTopConstraint.constant = -5
+            subParagraphTopConstraint.constant = 12
         case 2:
             MainHeadingLabel.text = "Rescuer"
             subParagraphLabel.text = "Rescuer can easily share the location of the Rescuee with the Support Cast/Caregiver"
             subParagraphLabel.textAlignment = .left
             boldTextParagraph.isHidden = true
-            subParagHeightConstraint.constant = 90
+            subParagHeightConstraint.constant = 59
             subParaWidthConstraints.constant = 42
             subParagraphLabel.addInterlineSpacing()
-//            subParagraphTopConstraint.constant = -10
+            subParagraphTopConstraint.constant = 12
         case 3:
             MainHeadingLabel.text = "Caregiver"
             subParagraphLabel.text = "As a Caregiver you can add Rescuees and connect with one or more Support Casts."
             subParagraphLabel.textAlignment = .justified
             boldTextParagraph.isHidden = true
-            subParagHeightConstraint.constant = 90
+            subParagHeightConstraint.constant = 59
             subParaWidthConstraints.constant = 42
             subParagraphLabel.addInterlineSpacing()
-//            subParagraphTopConstraint.constant = -19
+            subParagraphTopConstraint.constant = 12
         case 4:
             MainHeadingLabel.text = "Rescue Process"
             subParagraphLabel.text = "Rescuer can get the details that you provided of the Rescuee and inform the Support Cast/Caregiver. Once the Rescuee is located and returned, the rescue process would be completed"
             subParagraphLabel.textAlignment = .left
             boldTextParagraph.isHidden = true
-            subParagHeightConstraint.constant = 120
+            subParagHeightConstraint.constant = 110
             getStartBtn.isHidden = true
             nextBtnOutlet.isHidden = false
             backBtnOutlet.isHidden = false
@@ -189,13 +189,13 @@ class OnBoardScreensViewController: UIViewController {
             skipBtnOutlet.isHidden = false
             subParaWidthConstraints.constant = 45
             subParagraphLabel.addInterlineSpacing()
-//            subParagraphTopConstraint.constant = 7
+            subParagraphTopConstraint.constant = 12
         case 5:
             MainHeadingLabel.text = "BeLocated Store"
             subParagraphLabel.text = "Purchase useful products from the BeLocated store."
             subParagraphLabel.textAlignment = .left
             boldTextParagraph.isHidden = true
-            subParagHeightConstraint.constant = 46
+            subParagHeightConstraint.constant = 42
             getStartBtn.isHidden = false
             nextBtnOutlet.isHidden = true
             backBtnOutlet.isHidden = true
@@ -204,7 +204,7 @@ class OnBoardScreensViewController: UIViewController {
             skipBtnOutlet.isHidden = true
             subParaWidthConstraints.constant = 42
             subParagraphLabel.addInterlineSpacing()
-//            subParagraphTopConstraint.constant = 9
+            subParagraphTopConstraint.constant = 12
         default:
             print("problem in onboard btn action")
         }

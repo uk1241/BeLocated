@@ -50,6 +50,7 @@ class SupportCastPhotoViewController: UIViewController {
 
 extension UIView
 {
+    
     func applyGradient()
     {
         let gradientLayer = CAGradientLayer()
