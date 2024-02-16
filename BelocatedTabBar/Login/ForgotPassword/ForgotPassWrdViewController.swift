@@ -9,7 +9,7 @@ import UIKit
 import SkyFloatingLabelTextField
 var readEmailfrmTxtFld = ""
 
-class ForgotPassWrdViewController: UIViewController ,UITextFieldDelegate,LinkSentViewControllerDelegate{
+class ForgotPassWrdViewController: UIViewController ,UITextFieldDelegate{
     func linkSentViewControllerDidDismiss() {
         self.dismiss(animated: false, completion: nil)
     }
@@ -20,6 +20,7 @@ class ForgotPassWrdViewController: UIViewController ,UITextFieldDelegate,LinkSen
     @IBOutlet weak var emailTextfld: SkyFloatingLabelTextField!
     @IBOutlet weak var enterYourRegSubText: UILabel!
     
+    @IBOutlet weak var mainViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var cancelBtnOutlet: UIButton!
     // sec view outlets
     @IBOutlet weak var emailMobileTextLabel: UILabel!
@@ -30,7 +31,7 @@ class ForgotPassWrdViewController: UIViewController ,UITextFieldDelegate,LinkSen
     @IBOutlet weak var emailBackgroundView: UIView!
     @IBOutlet weak var doneBtn: UIButton!
     @IBOutlet weak var secViewBackGround: UIView!
-    /Users/samuelsajeev/Documents/0.3/BeLocatedtabBar-main.zip
+//    /Users/samuelsajeev/Documents/0.3/BeLocatedtabBar-main.zip
     // constraints animation
     @IBOutlet weak var activationleft: NSLayoutConstraint!
     @IBOutlet weak var activationRight: NSLayoutConstraint!
@@ -43,6 +44,11 @@ class ForgotPassWrdViewController: UIViewController ,UITextFieldDelegate,LinkSen
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        mainViewHeightConstraint.constant = 300
+        UIView.animate(withDuration: 0.5) {
+                    self.view.layoutIfNeeded()
+                }
+        mainViewHeightConstraint.constant = 634
         sendResetLinkBtnOutlet.layer.cornerRadius = sendResetLinkBtnOutlet.frame.height / 2
         backgroundView.clipsToBounds = true
         backgroundView.layer.cornerRadius = 24
@@ -67,19 +73,16 @@ class ForgotPassWrdViewController: UIViewController ,UITextFieldDelegate,LinkSen
         activationRight.constant  = 60
         emailBackgroundView.layer.cornerRadius = emailBackgroundView.frame.height / 2
         secViewHeight.constant = 0
-        if let integerValue = Int(readEmailfrmTxtFld) {
-            emailMobileTextLabel.text = "Click on the link we have sent to your phone number to reset your password"
-        } else {
-            emailMobileTextLabel.text = "We have sent you an email with a link to reset your password"
-        }
+        
     
     }
 
     @IBAction func cancelButtonAction(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)
         UIView.animate(withDuration: 0.3) {
-            self.view.layoutIfNeeded()
-        }
+                    self.view.layoutIfNeeded()
+                }
+        
     }
     func dismissPopUpView(){
         self.dismiss(animated: false, completion: nil)
@@ -94,9 +97,16 @@ class ForgotPassWrdViewController: UIViewController ,UITextFieldDelegate,LinkSen
         sendResetLinkBtnOutlet.isHidden = true
         secViewBackGround.isHidden = false
         secViewHeight.constant = 301
+        readEmailfrmTxtFld = emailTextfld.text ?? "nil"
                 UIView.animate(withDuration: 0.3) {
                             self.view.layoutIfNeeded()
                         }
+        passingMailLabel.text = readEmailfrmTxtFld
+        if let integerValue = Int(readEmailfrmTxtFld) {
+            emailMobileTextLabel.text = "Click on the link we have sent to your phone number to reset your password"
+        } else {
+            emailMobileTextLabel.text = "We have sent you an email with a link to reset your password"
+        }
             }
         
     

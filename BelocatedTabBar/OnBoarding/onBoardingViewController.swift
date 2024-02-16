@@ -10,8 +10,9 @@ import FacebookLogin
 import GoogleSignIn
 import FirebaseCore
 import FirebaseAuth
+import AuthenticationServices
 
-class onBoardingViewController: UIViewController {
+class onBoardingViewController: UIViewController ,ASAuthorizationControllerDelegate, ASAuthorizationControllerPresentationContextProviding{
     @IBOutlet var emailSignInBtn: UIButton!
     @IBOutlet var googleSignInBtn: UIButton!
     @IBOutlet var facebookSignInBtn: UIButton!
@@ -21,7 +22,6 @@ class onBoardingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
- 
         emailSignInBtn.makeRounded()
         googleSignInBtn.makeRounded()
         facebookSignInBtn.makeRounded()
@@ -81,10 +81,51 @@ class onBoardingViewController: UIViewController {
                }
            }
     }
-    
+    // MARK: - appleSignIN
     @objc func appleSignIN()
     {
+        let provider = ASAuthorizationAppleIDProvider()
+        let request = provider.createRequest()
+        request.requestedScopes = [.fullName, .email]
         
+        let controller = ASAuthorizationController(authorizationRequests: [request])
+        controller.delegate = self
+        controller.presentationContextProvider = self
+        controller.performRequests()
+    }
+    func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
+        print(error.localizedDescription)
+    }
+
+    /// Handle successful sign ins
+    func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+        
+        guard let credentials = authorization.credential as? ASAuthorizationAppleIDCredential else { return }
+        print("credentials,\(credentials)")
+//        identifierLabel.text = "Identifier: " + credentials.user
+        
+        let statusText: String
+        switch credentials.realUserStatus {
+        case .likelyReal:
+            statusText = "You are trusted by Apple"
+        case .unsupported:
+            statusText = "You're not trusted by Apple"
+        case .unknown:
+            statusText = "Apple does not know whether to trust you"
+        @unknown default:
+            statusText = "Unknown trust status"
+        }
+         print("statusText" , statusText)
+        
+        // On secondary sign ins, credentials are no longer provided, instead, only the user ID is available
+//        nameLabel.text = credentials.fullName?.description ?? nameLabel.text
+//        emailLabel.text = credentials.email ?? emailLabel.text
+    }
+    
+    // MARK: - ASAuthorizationControllerPresentationContextProviding
+    
+    func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+        return view.window ?? UIWindow()
     }
     
     private func performGoogleSignInFlow() {
@@ -102,7 +143,7 @@ class onBoardingViewController: UIViewController {
         GIDSignIn.sharedInstance.signIn(withPresenting: self) { [unowned self] result, error in
             guard error == nil else {
                 // [START_EXCLUDE]
-                return displayError(error)
+                return
                 // [END_EXCLUDE]
             }
             

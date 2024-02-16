@@ -16,6 +16,8 @@ target 'BelocatedTabBar' do
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
+  pod 'Alertift'
+  pod 'IQKeyboardManagerSwift'
   ## Firebase 🔥 Pods
   pod 'FirebaseAnalytics'
   pod 'FirebaseAuth'

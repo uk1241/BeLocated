@@ -6,16 +6,19 @@
 //
 
 import UIKit
-
+import SkyFloatingLabelTextField
 class PersonalDetailsTableViewCell: UITableViewCell {
     @IBOutlet var continueBtn: UIButton!
     @IBOutlet var signIn: UIButton!
-    @IBOutlet weak var whyWeBackgroundView: CustomView!
+    @IBOutlet weak var whyWeBackgroundView: UIView!
+    @IBOutlet weak var datePickerBtnOutlet: UIButton!
+    @IBOutlet weak var textLabelFor: UILabel!
+    @IBOutlet weak var dateTextFld: SkyFloatingLabelTextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         continueBtn.makeRounded()
-        whyWeBackgroundView.applyGradient()
+        whyWeBackgroundView.ThreeColorGradient()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -25,12 +28,7 @@ class PersonalDetailsTableViewCell: UITableViewCell {
     }
     @IBAction func signInButtonTapped()
         {
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let SignUpVc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! SignUpViewController
-//
-//            if let navigationController = self.navigationController {
-//                navigationController.pushViewController(SignUpVc, animated: true)
-//            }
+
         }
     
 }

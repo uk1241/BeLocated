@@ -6,12 +6,9 @@
 //
 
 import UIKit
-protocol LinkSentViewControllerDelegate{
-    func linkSentViewControllerDidDismiss()
-}
+
 
 class LinkSentViewController: UIViewController {
-    var myDelegate :  LinkSentViewControllerDelegate?
     @IBOutlet weak var verificationBtnOutlet: UIButton!
     @IBOutlet weak var resendBtn: UIButton!
     @IBOutlet weak var doneBtn: UIButton!
@@ -52,10 +49,10 @@ class LinkSentViewController: UIViewController {
 
     @IBAction func doneBtnAction(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)
-        UIView.animate(withDuration: 0.3) {
+        UIView.animate(withDuration: 0.6) {
             self.view.layoutIfNeeded()
         }
-        myDelegate?.linkSentViewControllerDidDismiss()
+        
         
         
         

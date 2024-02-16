@@ -3,4 +3,54 @@
    uuid = "19EB9AD1-354A-4821-B124-A25A657577EB"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "969D1908-B723-41F0-9C3B-6426A4C89832"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BelocatedTabBar/OnBoarding/onBoardingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "authorizationController(controller:didCompleteWithAuthorization:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "969D1908-B723-41F0-9C3B-6426A4C89832 - 68ecaeb09f6b0ae1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeLocated.onBoardingViewController.authorizationController(controller: __C.ASAuthorizationController, didCompleteWithError: Swift.Error) -&gt; ()"
+                  moduleName = "BeLocated"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samuelsajeev/Desktop/BelocatedMain/BeLocated/BelocatedTabBar/OnBoarding/onBoardingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "171">
+               </Location>
+               <Location
+                  uuid = "969D1908-B723-41F0-9C3B-6426A4C89832 - ea2337ef5ba083c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeLocated.onBoardingViewController.authorizationController(controller: __C.ASAuthorizationController, didCompleteWithAuthorization: __C.ASAuthorization) -&gt; ()"
+                  moduleName = "BeLocated"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/samuelsajeev/Desktop/BelocatedMain/BeLocated/BelocatedTabBar/OnBoarding/onBoardingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "121">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

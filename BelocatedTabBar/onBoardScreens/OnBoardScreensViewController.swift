@@ -44,9 +44,16 @@ class OnBoardScreensViewController: UIViewController {
         getStartBtn.isHidden = true
         lastPageBackBtn.isHidden = true
         getStartBtn.layer.cornerRadius = getStartBtn.frame.height / 2
+        
 //        MainHeadingLabel.font = UIFont(name: "Gilroy-Bold", size: 30)
 //        subParagraphLabel.font = UIFont(name: "Gilroy-Regular", size: 17)
         subParagraphLabel.addInterlineSpacing()
+        mainHeadingBottomConstraints.constant = 400 // down animation height
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+            
+        }
+        mainHeadingBottomConstraints.constant = 233
         // swipeup gesture
         let swipeRightGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(_:)))
         swipeRightGesture.direction = .right
@@ -255,7 +262,7 @@ private extension UILabel {
 }
 extension UILabel {
 
-    func setLineSpacing(lineSpacing: CGFloat = 4, lineHeightMultiple: CGFloat = 0.0) {
+    func setLineSpacing(lineSpacing: CGFloat = 5, lineHeightMultiple: CGFloat = 0.0) {
 
         guard let labelText = self.text else { return }
 

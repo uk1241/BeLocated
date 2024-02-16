@@ -25,7 +25,7 @@
                 <outlet property="activationRight" destination="zUN-h2-YBp" id="f6S-IP-wEN"/>
                 <outlet property="activationleft" destination="0wV-W3-0Ws" id="hHo-52-Pmj"/>
                 <outlet property="backgroundView" destination="qGR-pg-rpb" id="89i-bO-Cgh"/>
-                <outlet property="cancelBtnOutlet" destination="dHJ-YI-kYT" id="lWQ-Hp-Qpd"/>
+                <outlet property="cancelBtnOutlet" destination="dHJ-YI-kYT" id="NjY-ex-fle"/>
                 <outlet property="dashLineLeft" destination="lVj-dg-bTK" id="nIH-A9-c2M"/>
                 <outlet property="doneBtn" destination="UCX-M1-3C7" id="2v5-dg-gnl"/>
                 <outlet property="emailBackgroundView" destination="IC7-4o-pez" id="N4f-jN-Qqf"/>
@@ -33,6 +33,7 @@
                 <outlet property="emailTextfld" destination="eXA-Jd-H50" id="JU2-UZ-U5R"/>
                 <outlet property="enterYourRegSubText" destination="4B7-Cl-dce" id="BMk-MG-yHm"/>
                 <outlet property="forGotPassHeading" destination="h23-ib-OBd" id="HBs-9T-fbT"/>
+                <outlet property="mainViewHeightConstraint" destination="WgE-ni-u7b" id="Bhr-wd-0c3"/>
                 <outlet property="passingMailLabel" destination="sa6-nP-MoL" id="zbj-Zr-1o8"/>
                 <outlet property="resendBtnAction" destination="9MS-V2-jda" id="p3k-ms-Ofr"/>
                 <outlet property="resendDashLine" destination="M0J-kP-J79" id="IWW-9U-VHP"/>
@@ -231,8 +232,7 @@
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" image="xButton"/>
                             <connections>
-                                <action selector="cancelBtnOutlet:" destination="-1" eventType="touchUpInside" id="CBh-Qh-NYM"/>
-                                <action selector="cancelButtonAction:" destination="-1" eventType="touchUpInside" id="ivM-Fv-8eu"/>
+                                <action selector="cancelButtonAction:" destination="-1" eventType="touchUpInside" id="QbH-MC-Hjl"/>
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your registered email address or phone number you use for your BeLocated account" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4B7-Cl-dce">
@@ -298,6 +298,7 @@
                         <constraint firstItem="UfC-Ha-QsJ" firstAttribute="leading" secondItem="qGR-pg-rpb" secondAttribute="leading" constant="20" id="PPy-vq-rwU"/>
                         <constraint firstItem="dHJ-YI-kYT" firstAttribute="top" secondItem="qGR-pg-rpb" secondAttribute="top" constant="25" id="SBN-Qd-9S8"/>
                         <constraint firstAttribute="trailing" secondItem="UfC-Ha-QsJ" secondAttribute="trailing" constant="20" id="TBt-dD-VP2"/>
+                        <constraint firstAttribute="height" constant="634" id="WgE-ni-u7b"/>
                         <constraint firstItem="Ax0-5h-Kt7" firstAttribute="leading" secondItem="qGR-pg-rpb" secondAttribute="leading" id="YdR-5K-RPs"/>
                         <constraint firstItem="4B7-Cl-dce" firstAttribute="leading" secondItem="qGR-pg-rpb" secondAttribute="leading" constant="20" id="gCv-s8-0Tp"/>
                         <constraint firstAttribute="trailing" secondItem="eXA-Jd-H50" secondAttribute="trailing" constant="20" id="jh9-tJ-HBp"/>
@@ -313,7 +314,6 @@
             <color key="backgroundColor" red="0.3273541331" green="0.3510745764" blue="0.4080201685" alpha="0.91993516156462585" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="qGR-pg-rpb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="F0f-K5-84o"/>
-                <constraint firstItem="qGR-pg-rpb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="159" id="I8g-2t-4YY"/>
                 <constraint firstItem="qGR-pg-rpb" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="KcP-8Y-b4m"/>
                 <constraint firstAttribute="bottom" secondItem="qGR-pg-rpb" secondAttribute="bottom" id="b83-p4-NGE"/>
             </constraints>
@@ -321,6 +321,11 @@
             <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
         </view>
     </objects>
+    <designables>
+        <designable name="eXA-Jd-H50">
+            <size key="intrinsicContentSize" width="176" height="14.666666666666666"/>
+        </designable>
+    </designables>
     <resources>
         <image name="greenBtn" width="27" height="27"/>
         <image name="xButton" width="36" height="36"/>

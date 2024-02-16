@@ -9,7 +9,7 @@ import UIKit
 
 class contactDetailsTableViewCell: UITableViewCell {
     @IBOutlet var continueBtn: UIButton!
-    @IBOutlet weak var whyWeBackgroundView: CustomView!
+    @IBOutlet weak var whyWeBackgroundView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

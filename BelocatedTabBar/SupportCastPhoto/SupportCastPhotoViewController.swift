@@ -61,6 +61,17 @@ extension UIView
         gradientLayer.frame = bounds
         layer.insertSublayer(gradientLayer, at: 0)
     }
+    func ThreeColorGradient()
+        {
+            let gradientLayer = CAGradientLayer()
+//            gradientLayer.colors = [UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1).cgColor,UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1).cgColor,UIColor(red: 235/255, green: 234/255, blue: 234/255, alpha: 1).cgColor]
+            gradientLayer.colors = [UIColor(red: 235/255, green: 234/255, blue: 234/255, alpha: 1).cgColor,UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1).cgColor,UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1).cgColor]
+            gradientLayer.cornerRadius = layer.cornerRadius
+            gradientLayer.startPoint = CGPoint(x: 0,y:0)
+            gradientLayer.endPoint = CGPoint(x:1,y:0)
+            gradientLayer.frame = bounds
+            layer.insertSublayer(gradientLayer, at: 0)
+        }
     func addDashedBorder() {
         let color = UIColor(red: 162/255, green: 130/255, blue: 0/255, alpha: 1).cgColor
         

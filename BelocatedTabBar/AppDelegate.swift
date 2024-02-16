@@ -10,16 +10,31 @@ import UIKit
 import FacebookCore
 import FirebaseCore
 import GoogleSignIn
+import IQKeyboardManagerSwift
 //import FBSDKCore
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        IQKeyboardManager.shared.enable = true
+        
+        if(UserDefaults.standard.bool(forKey: "notFirstInApp") == false){
+            UserDefaults.standard.set(true, forKey: "notFirstInApp")
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "OnBoardScreensViewController")
+            self.window?.rootViewController = viewController
+            self.window?.makeKeyAndVisible()
+        }else{
+           //Here you can show storyboard that you have to launch after first launch
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "onBoardingViewController")
+            self.window?.rootViewController = viewController
+            self.window?.makeKeyAndVisible()
+        }
 //        GMSServices.provideAPIKey("AIzaSyDB2jNiow1mIxs6b6T0VF7oU-XNTdsPYVg")
         
         return true
@@ -50,6 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
 
 
 }

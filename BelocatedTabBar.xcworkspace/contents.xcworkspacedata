@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:BelocatedTabBar.xcodeproj">
+      location = "group:/Users/samuelsajeev/Desktop/BelocatedMain/BeLocated/BeLocated.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

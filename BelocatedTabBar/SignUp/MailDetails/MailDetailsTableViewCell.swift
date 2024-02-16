@@ -10,11 +10,11 @@ import UIKit
 class MailDetailsTableViewCell: UITableViewCell {
     @IBOutlet var continueButton: UIButton!
     
-    @IBOutlet weak var whyWeBackgroundView: CustomView!
+//    @IBOutlet weak var whyWeBackgroundView: CustomView!
     override func awakeFromNib() {
         super.awakeFromNib()
         continueButton.makeRounded()
-        whyWeBackgroundView.applyGradient()
+//        whyWeBackgroundView.applyGradient()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

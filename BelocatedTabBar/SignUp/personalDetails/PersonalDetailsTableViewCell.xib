@@ -7,27 +7,46 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Bold.ttf">
+            <string>Gilroy-Bold</string>
+        </array>
+        <array key="Gilroy-Medium.ttf">
+            <string>Gilroy-Medium</string>
+        </array>
+        <array key="Gilroy-Regular.ttf">
+            <string>Gilroy-Regular</string>
+        </array>
+        <array key="Gilroy-SemiBold.ttf">
+            <string>Gilroy-SemiBold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonalDetailsTableViewCell" rowHeight="540" id="KGk-i7-Jjw" customClass="PersonalDetailsTableViewCell" customModule="BelocatedTabBar" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="540"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonalDetailsTableViewCell" rowHeight="544" id="KGk-i7-Jjw" customClass="PersonalDetailsTableViewCell" customModule="BeLocated" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="544"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="540"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="544"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Personal Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlv-hV-WYd">
-                        <rect key="frame" x="20" y="27" width="132" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                        <color key="textColor" red="0.63529411764705879" green="0.50980392156862742" blue="0.0" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlv-hV-WYd">
+                        <rect key="frame" x="20" y="10" width="734.33333333333337" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="ovs-hq-ufO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="17"/>
+                        <color key="textColor" red="0.63529411764705879" green="0.50980392156862742" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rle-yt-mzL" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                        <rect key="frame" x="20" y="120" width="335" height="56"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rle-yt-mzL" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                        <rect key="frame" x="20" y="113" width="864.33333333333337" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="Dgh-p2-a3P"/>
+                        </constraints>
+                        <color key="textColor" red="0.27450980392156865" green="0.22745098039215686" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="18"/>
                         <textInputTraits key="textInputTraits"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Last Name"/>
@@ -42,10 +61,12 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </textField>
-                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1gM-i4-e2J" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                        <rect key="frame" x="20" y="184" width="335" height="56"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1gM-i4-e2J" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                        <rect key="frame" x="20" y="184" width="864.33333333333337" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="5bS-jW-oIX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="18"/>
                         <textInputTraits key="textInputTraits"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Date Of Birth"/>
@@ -60,10 +81,13 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </textField>
-                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l2G-cI-yV1" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                        <rect key="frame" x="20" y="56" width="335" height="56"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l2G-cI-yV1" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                        <rect key="frame" x="20" y="42" width="864.33333333333337" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="QAl-TP-mCL"/>
+                        </constraints>
+                        <color key="textColor" red="0.27450980392156865" green="0.22745098039215686" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="18"/>
                         <textInputTraits key="textInputTraits"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
@@ -82,10 +106,36 @@
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" image="CalenderBtn"/>
                     </button>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wAo-gM-ZuZ" customClass="CustomView" customModule="BelocatedTabBar" customModuleProvider="target">
-                        <rect key="frame" x="20" y="270" width="335" height="130"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAo-gM-ZuZ" customClass="CustomView" customModule="BeLocated" customModuleProvider="target">
+                        <rect key="frame" x="20" y="255" width="864.33333333333337" height="130"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why we ask for your date of birth?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaG-Ub-LNU">
+                                <rect key="frame" x="15" y="15" width="819.33333333333337" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="awe-4r-T2b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="15"/>
+                                <color key="textColor" red="0.27450980392156865" green="0.22745098039215686" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your date of birth can be used as an additional layer of security to verify your identity during the account recovery process." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FW7-8l-JXf">
+                                <rect key="frame" x="15" y="40" width="820.33333333333337" height="77"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="15"/>
+                                <color key="textColor" red="0.27450980392156865" green="0.22745098039215686" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.92156862745098034" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="FW7-8l-JXf" secondAttribute="bottom" constant="13" id="D9T-Nj-6QK"/>
+                            <constraint firstItem="FW7-8l-JXf" firstAttribute="leading" secondItem="wAo-gM-ZuZ" secondAttribute="leading" constant="15" id="GAt-RM-dbr"/>
+                            <constraint firstAttribute="trailing" secondItem="FW7-8l-JXf" secondAttribute="trailing" constant="29" id="Vqa-h4-kuu"/>
+                            <constraint firstItem="VaG-Ub-LNU" firstAttribute="top" secondItem="wAo-gM-ZuZ" secondAttribute="top" constant="15" id="hwZ-Om-Teu"/>
+                            <constraint firstItem="VaG-Ub-LNU" firstAttribute="leading" secondItem="wAo-gM-ZuZ" secondAttribute="leading" constant="15" id="kP3-7A-oc2"/>
+                            <constraint firstItem="FW7-8l-JXf" firstAttribute="top" secondItem="VaG-Ub-LNU" secondAttribute="bottom" constant="10" id="sYw-pr-PGR"/>
+                            <constraint firstAttribute="trailing" secondItem="VaG-Ub-LNU" secondAttribute="trailing" constant="30" id="sir-cW-o5L"/>
+                            <constraint firstAttribute="height" constant="130" id="wAE-gL-Rlo"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                 <color key="value" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
@@ -98,26 +148,34 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rn2-aA-7dq">
-                        <rect key="frame" x="20" y="419" width="335" height="50"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rn2-aA-7dq">
+                        <rect key="frame" x="20" y="400" width="864.33333333333337" height="50"/>
                         <color key="backgroundColor" red="0.070588235294117646" green="0.074509803921568626" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="qn3-Az-rN4"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" title="Continue">
                             <color key="titleColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pem-gc-4I9">
-                        <rect key="frame" x="52" y="514" width="191" height="20"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pem-gc-4I9">
+                        <rect key="frame" x="60" y="503" width="198" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="198" id="evZ-Uw-xll"/>
+                            <constraint firstAttribute="height" constant="16" id="vSd-IL-Nwg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ces-j6-2fe">
-                        <rect key="frame" x="243" y="516" width="53" height="16"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ces-j6-2fe">
+                        <rect key="frame" x="261" y="501" width="53" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="CRS-vz-1Me"/>
+                            <constraint firstAttribute="height" constant="16" id="ZUm-6d-dKQ"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" title="Sign In">
@@ -127,28 +185,66 @@
                             <action selector="signInButtonTapped" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1s4-dC-ult"/>
                         </connections>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMG-Dd-TeN">
+                        <rect key="frame" x="268" y="510" width="62" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="62" id="3lC-7W-m2b"/>
+                            <constraint firstAttribute="height" constant="21" id="SM5-lz-krl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.27450980392156865" green="0.22745098039215686" blue="0.031372549019607843" alpha="0.54432397959183676" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="nlv-hV-WYd" secondAttribute="trailing" constant="150" id="4PP-xP-v0h"/>
+                    <constraint firstItem="Rle-yt-mzL" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="6Zw-Ef-9YV"/>
+                    <constraint firstItem="1gM-i4-e2J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="6e8-su-ogY"/>
+                    <constraint firstItem="wAo-gM-ZuZ" firstAttribute="top" secondItem="1gM-i4-e2J" secondAttribute="bottom" constant="15" id="8bt-Pc-7D9"/>
+                    <constraint firstItem="l2G-cI-yV1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="9ac-5x-EJb"/>
+                    <constraint firstItem="wAo-gM-ZuZ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="CTj-Rd-g7Q"/>
+                    <constraint firstItem="wAo-gM-ZuZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="MyM-nI-95L"/>
+                    <constraint firstItem="Pem-gc-4I9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="PWS-m5-CJP"/>
+                    <constraint firstItem="Pem-gc-4I9" firstAttribute="top" secondItem="Rn2-aA-7dq" secondAttribute="bottom" constant="53" id="PoF-PH-Gju"/>
+                    <constraint firstItem="Rle-yt-mzL" firstAttribute="top" secondItem="l2G-cI-yV1" secondAttribute="bottom" constant="15" id="TBJ-oT-1tr"/>
+                    <constraint firstItem="Rle-yt-mzL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="TNC-9O-9Mw"/>
+                    <constraint firstItem="nlv-hV-WYd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="a9v-Uy-ckC"/>
+                    <constraint firstAttribute="trailing" secondItem="XMG-Dd-TeN" secondAttribute="trailing" constant="52" id="dQm-Tm-YdR"/>
+                    <constraint firstItem="ces-j6-2fe" firstAttribute="top" secondItem="Rn2-aA-7dq" secondAttribute="bottom" constant="51" id="daj-ET-l5L"/>
+                    <constraint firstItem="Rn2-aA-7dq" firstAttribute="top" secondItem="wAo-gM-ZuZ" secondAttribute="bottom" constant="15" id="enC-hC-srh"/>
+                    <constraint firstAttribute="trailing" secondItem="l2G-cI-yV1" secondAttribute="trailing" constant="20" id="gRn-ZO-IMX"/>
+                    <constraint firstItem="nlv-hV-WYd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="gYo-YQ-o8A"/>
+                    <constraint firstItem="XMG-Dd-TeN" firstAttribute="leading" secondItem="Pem-gc-4I9" secondAttribute="trailing" constant="10" id="hBv-N6-HiJ"/>
+                    <constraint firstItem="Rn2-aA-7dq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="hHl-Tg-EmI"/>
+                    <constraint firstItem="XMG-Dd-TeN" firstAttribute="top" secondItem="Rn2-aA-7dq" secondAttribute="bottom" constant="60" id="p3p-ic-Nja"/>
+                    <constraint firstItem="1gM-i4-e2J" firstAttribute="top" secondItem="Rle-yt-mzL" secondAttribute="bottom" constant="15" id="ukU-6h-mXU"/>
+                    <constraint firstItem="l2G-cI-yV1" firstAttribute="top" secondItem="nlv-hV-WYd" secondAttribute="bottom" constant="15" id="v0n-ht-dA1"/>
+                    <constraint firstItem="Rn2-aA-7dq" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="y3X-Wv-dTH"/>
+                    <constraint firstItem="1gM-i4-e2J" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="zGi-9p-rNy"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="continueBtn" destination="Rn2-aA-7dq" id="Vg3-bi-c3d"/>
+                <outlet property="datePickerBtnOutlet" destination="kvZ-4y-LQp" id="ACu-wK-9cZ"/>
+                <outlet property="dateTextFld" destination="1gM-i4-e2J" id="JDN-Ia-v0s"/>
                 <outlet property="signIn" destination="ces-j6-2fe" id="EIl-TX-7ne"/>
                 <outlet property="whyWeBackgroundView" destination="wAo-gM-ZuZ" id="gkJ-5J-Iba"/>
             </connections>
-            <point key="canvasLocation" x="131.29770992366412" y="-11.267605633802818"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-9.8591549295774659"/>
         </tableViewCell>
     </objects>
     <designables>
         <designable name="1gM-i4-e2J">
-            <size key="intrinsicContentSize" width="84.333333333333329" height="18.666666666666668"/>
+            <size key="intrinsicContentSize" width="105" height="22.666666666666668"/>
         </designable>
         <designable name="Rle-yt-mzL">
-            <size key="intrinsicContentSize" width="69" height="18.666666666666668"/>
+            <size key="intrinsicContentSize" width="87.333333333333329" height="22.666666666666668"/>
         </designable>
         <designable name="l2G-cI-yV1">
-            <size key="intrinsicContentSize" width="74" height="19.666666666666668"/>
+            <size key="intrinsicContentSize" width="88" height="22.666666666666668"/>
         </designable>
     </designables>
     <resources>
